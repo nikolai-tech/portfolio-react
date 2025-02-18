@@ -1,0 +1,131 @@
+body { 
+    font-family: 'Arial', sans-serif; 
+    background-image: url(./pictures/starbackground.gif); 
+    margin: 0; 
+    padding: 0; 
+    color: #333; 
+ }
+  
+ .home {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('./pictures/starbackground.gif');
+    background-size: cover;
+    background-position: center;
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .home h1 {
+      font-size: 2rem;
+    }
+    
+    .home p {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .home h1 {
+      font-size: 1.75rem;
+    }
+    
+    .home p {
+      font-size: 1rem;
+    }
+  }
+
+ /* About Component Styles */
+.about-card {
+    border-radius: 15px !important;
+    transition: transform 0.3s ease;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .skill-icon {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    padding: 0.5rem;
+    transition: transform 0.2s ease;
+  }
+  
+  .skill-icon:hover {
+    transform: scale(1.1);
+  }
+  
+  @media (max-width: 768px) {
+    .about-card {
+      margin: 1rem !important;
+    }
+    
+    .skills-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .skills-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .card-text {
+      font-size: 0.9rem;
+    }
+  }
+
+ img {
+    width: 100%;
+ }
+  
+ h1, h2 { 
+    color: #4A90E2; 
+ }
+
+ .projects {
+    padding: 2rem 0;
+  }
+  
+  .container-md {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .carousel-image-container {
+    position: relative;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    overflow: hidden;
+  }
+  
+  .carousel-image-container img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+  }
+  
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .carousel-caption h3 {
+      font-size: 1.2rem !important;
+    }
+    
+    .carousel-caption p {
+      font-size: 0.9rem;
+    }
+  }
